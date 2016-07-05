@@ -1,0 +1,88 @@
+$highlight: #4979da
+$dark: #111315
+body
+	font-family: 'Fira Mono', monospace
+
+.remove
+	display: none
+
+.wrapper
+	width: 1140px
+	max-width: 90%
+	margin: 0 auto
+	.bio
+		text-align: center
+		margin: 5% auto
+		padding: 2%
+		img
+			border-radius: 50%
+			width: 200px
+			max-width: 90%
+			margin: 0 auto 2.5%
+	h1
+		font-size: 1em
+	#typed, .typed-cursor
+		font-size: 2.4em
+	#typed
+		u
+			font-weight: 700
+			color: $highlight
+	.linked
+		text-align: center
+		font-size: .75em
+		position: absolute
+		bottom: 20px
+		right: 0
+		left: 0
+		a, a:visited
+			color: $highlight
+			transition: all 300ms ease 0s
+			&:hover
+				color: $dark
+
+
+.typed-cursor
+	opacity: 1
+	font-weight: 100
+	-webkit-animation: blink 0.85s infinite
+	-moz-animation: blink 0.85s infinite
+	-ms-animation: blink 0.85s infinite
+	-o-animation: blink 0.85s infinite
+	animation: blink 0.85s infinite
+
+
+@keyframes blink
+	0%
+		opacity: 1
+	50%
+		opacity: 0
+	100%
+		opacity: 1
+@-webkit-keyframes blink
+	0%
+		opacity: 1
+	50%
+		opacity: 0
+	100%
+		opacity: 1
+@-moz-keyframes blink
+	0%
+		opacity: 1
+	50%
+		opacity: 0
+	100%
+		opacity: 1
+@-ms-keyframes blink
+	0%
+		opacity: 1
+	50%
+		opacity: 0
+	100%
+		opacity: 1
+@-o-keyframes blink
+	0%
+		opacity: 1
+	50%
+		opacity: 0
+	100%
+		opacity: 1
